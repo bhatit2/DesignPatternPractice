@@ -1,2 +1,0 @@
-# DesignPatternPractice
-Created with CodeSandbox
