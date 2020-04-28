@@ -30,3 +30,7 @@ For SpecialMath  Class, I am using Command Pattern.
 #### Part C
 
 To watch array for any changes, I am using Observer Pattern.
+
+
+**CodeSandbox link : **
+[Design Patterns in JS](https://codesandbox.io/s/dank-voice-bnob2?file=/src/structuralPattern.js:0-1134)
