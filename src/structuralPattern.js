@@ -1,25 +1,3 @@
-/**Creational (Attached file CreationalPattern.js)
-
-I have used factory pattern to delegate the responsibility of object creation to another class
-In order to get single instance of employee object, I am using Singleton pattern. 
-
-Structural (Attached file StructuralPattern.js)
-
-A. B.  In order to interact between two classes i.e. OldCalculator and new Calculator in a cleaner manner, I have created a new  class UltimateCalculator which is  using other two classes internally and providing a cleaner interface to user hiding all complexity. This is facade pattern. 
-
-C.Now in order to store the results of previous calculation, I have created CleverCalculator Class which have extended UltimateCalculator functionality by using memoization technique.
-
-D.To enable logging functionality, I have created LoggingDecorator class which acts as a wrapper . This is decorator pattern.
-
-Behavioral (Attached file BehavioralPattern.js)
-
-A. For CumulativeSum Class, I am using Chain of Responsibility Design Pattern.
-
-B. For SpecialMath  Class, I am using Command Pattern.
-
-C. To watch array for any changes, I am using Observer Pattern.
- */
-
 /**Part A, B */
 // Facade Pattern
 class OldCalculator {
