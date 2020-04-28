@@ -32,5 +32,5 @@ For SpecialMath  Class, I am using Command Pattern.
 To watch array for any changes, I am using Observer Pattern.
 
 
-**CodeSandbox link : **
+**CodeSandbox link :**
 [Design Patterns in JS](https://codesandbox.io/s/dank-voice-bnob2?file=/src/structuralPattern.js:0-1134)
