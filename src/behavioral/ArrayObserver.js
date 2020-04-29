@@ -1,66 +1,3 @@
-/** Part A */
-//Chain of responsibility
-
-class CumulativeSum {
-  constructor() {
-    this._total = 0;
-  }
-  add(num) {
-    this._total += num;
-    return this;
-  }
-  get sum() {
-    return this._total;
-  }
-}
-
-var sum1 = new CumulativeSum();
-console.log(
-  sum1
-    .add(10)
-    .add(2)
-    .add(50).sum
-);
-
-/**Part B */
-//Command Pattern
-class SpecialMath {
-  constructor(num) {
-    this._num = num;
-  }
-
-  square() {
-    return this._num ** 2;
-  }
-
-  cube() {
-    return this._num ** 3;
-  }
-
-  squareRoot() {
-    return Math.sqrt(this._num);
-  }
-}
-
-class Command {
-  constructor(receiver) {
-    this._receiver = receiver;
-    this._commands = [];
-  }
-
-  execute(command) {
-    this._commands.push(command);
-    this._receiver[command]();
-  }
-  get commandsExecuted() {
-    return this._commands;
-  }
-}
-
-const x = new Command(new SpecialMath(5));
-x.execute("square");
-x.execute("cube");
-
 /**Part C */
 //Observer Pattern
 class Subject {
@@ -162,14 +99,4 @@ class Observer {
   }
 }
 
-const users = ["Alex Banks", "Eve Porcello"];
-const subject = new Subject(users);
-const observer = new Observer(subject);
-subject.push(2);
-subject.push(3);
-subject.push(4);
-subject.reverse();
-subject.pop();
-subject.concat(["Alex Banks"]);
-subject.slice(2);
-subject.push(1);
+export { Subject, Observer };

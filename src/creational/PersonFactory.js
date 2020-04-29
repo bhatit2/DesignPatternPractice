@@ -48,23 +48,4 @@ class PersonFactory {
   }
 }
 
-//Instance of factory
-const personfactory = new PersonFactory();
-// Shopper Alex Banks and Employee Eve Porcello, each has 100 moneys
-const shopperAlex = personfactory.create("shopper", "Alex Banks", 100);
-const oneMoreShopper = personfactory.create("shopper", "Test", 200);
-const employeeEve = personfactory.create(
-  "employee",
-  "Eve Porcello",
-  100,
-  "Epam"
-);
-const oneMoreEmployee = personfactory.create("employee", "emp2");
-console.table("Shopper Alex Banks ", shopperAlex);
-console.table("Test Shopper ", oneMoreShopper);
-console.table("Employee Eve Porcello ", employeeEve);
-console.table("One more Employee ", oneMoreEmployee);
-console.log(
-  "Are both employee instance same(employeeEve === oneMoreEmployee) ? ",
-  employeeEve === oneMoreEmployee
-);
+export default PersonFactory;
