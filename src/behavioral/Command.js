@@ -25,8 +25,12 @@ class Command {
   }
 
   execute(command) {
-    this.commands.push(command);
-    this.receiver[command]();
+    if (this.receiver[command]) {
+      this.commands.push(command);
+      this.receiver[command]();
+    } else {
+      console.log(`${command} isn't supported`);
+    }
   }
   get commandsExecuted() {
     return this.commands;
